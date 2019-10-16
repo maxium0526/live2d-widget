@@ -47,11 +47,12 @@
 	animation: shake 50s ease-in-out 5s infinite;
 }
 #waifu #live2d {
-	position: relative;
+	position: fixed;
 	cursor: grab;
 	cursor: -webkit-grab;
 	cursor: -o-grab;
 	cursor: -ms-grab;
+	bottom: -10px;
 }
 #waifu #live2d:active {
 	cursor: grabbing;
