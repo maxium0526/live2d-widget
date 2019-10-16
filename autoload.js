@@ -5,19 +5,19 @@ const live2d_path = "/live2d-widget/";
 //加载waifu.css
 $("<link>").attr({ href: live2d_path + "waifu.css", rel: "stylesheet" }).appendTo("head");
 
-//加载live2d.min.js
-$.ajax({
-	url: live2d_path + "live2d.min.js",
-	dataType: "script",
-	cache: true
-});
+// //加载live2d.min.js
+// $.ajax({
+// 	url: live2d_path + "live2d.min.js",
+// 	dataType: "script",
+// 	cache: true
+// });
 
-//加载waifu-tips.js
-$.ajax({
-	url: live2d_path + "waifu-tips.js",
-	dataType: "script",
-	cache: true
-});
+// //加载waifu-tips.js
+// $.ajax({
+// 	url: live2d_path + "waifu-tips.js",
+// 	dataType: "script",
+// 	cache: true
+// });
 
 //初始化看板娘，会自动加载指定目录下的waifu-tips.json
 $(window).on("load", function() {
