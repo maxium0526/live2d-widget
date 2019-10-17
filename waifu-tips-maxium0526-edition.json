@@ -24,7 +24,7 @@
 		"selector": "#waifu-tool .fa-times",
 		"text": ["到了要說再見的時候了嗎？", "嗚嗚 QAQ 後會有期……", "不要拋棄我呀……", "我們，還能再見面嗎……", "哼，你會後悔的！"]
 	}, {
-		"selector": ".menu-item-home",
+		"selector": ".navbar-link[href='/']",
 		"text": ["點擊前往首頁，想回到上一頁可以使用瀏覽器的後退功能哦。", "點它就可以回到首頁啦！", "回首頁看看吧。"]
 	}, {
 		"selector": ".menu-item-about",
@@ -36,13 +36,13 @@
 		"selector": ".menu-item-categories",
 		"text": ["文章都分類好啦～", "點擊來查看文章分類哦。", "快看看這裏都有什麽呢！"]
 	}, {
-		"selector": ".menu-item-archives",
+		"selector": ".navbar-link[href='/blog/archives']",
 		"text": ["翻頁比較麻煩嗎，那就來看看文章歸檔吧。", "文章目錄都整理在這裏啦！", "快看看這裏都有什麽呢？"]
 	}, {
-		"selector": ".menu-item-friends",
+		"selector": ".navbar-link[href='/blog/links.html']",
 		"text": ["這是我的朋友們哦ヾ(◍°∇°◍)ﾉﾞ", "要去大佬們的家看看嗎？", "要去拜訪一下我的朋友們嗎？"]
 	}, {
-		"selector": ".menu-item-search",
+		"selector": ".navbar-link[href='/blog/search.html']",
 		"text": ["找不到想看的內容？搜索看看吧！", "在找什麽東西呢，需要幫忙嗎？"]
 	}, {
 		"selector": ".site-author",
