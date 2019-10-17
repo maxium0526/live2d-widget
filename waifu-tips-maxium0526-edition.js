@@ -217,6 +217,13 @@ function loadWidget(waifuPath, apiPath, config) {
 		localStorage.setItem("modelId", modelId);
 		if (modelTexturesId === undefined) modelTexturesId = 0;
 		localStorage.setItem("modelTexturesId", modelTexturesId);
+
+		//temporary code, use for loading localstorage
+		if(config.loadPioFromLocal != undefined && config.loadPioFromLocal == true){
+			loadlive2d("live2d", waifuPath + "model/Pio/index.json", console.log('Loaded Pio from local storage successfully.'));
+			return;
+		}
+
 		loadlive2d("live2d", `${apiPath}/get/?id=${modelId}-${modelTexturesId}`, console.log(`Live2D 模型 ${modelId}-${modelTexturesId} 加载完成`));
 	}
 

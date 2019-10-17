@@ -14,6 +14,7 @@ loadScriptSync(live2d_path + 'waifu-tips-maxium0526-edition.js');
 //初始化看板娘，会自动加载指定目录下的waifu-tips.json
 $(window).on("load", function() {
 	initWidget(live2d_path + "waifu-tips-maxium0526-edition.json", "https://live2d.fghrsh.net/api",{
+    loadPioFromLocal: true,
     tools:{
       useComment: false,
       usePaperPlane: false,
