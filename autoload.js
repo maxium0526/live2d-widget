@@ -1,9 +1,13 @@
 //注意：live2d_path参数应使用绝对路径
 //const live2d_path = "https://maxium0526.github.io/live2d-widget/";
-const live2d_path = "/live2d-widget/";
+const live2d_path = document.currentScript.src.split('/').slice(0, -1).join('/') + '/';//get this file's directory
+// const live2d_path = "/live2d-widget/";
 
 //加载waifu.css
 $("<link>").attr({ href: live2d_path + "waifu.css", rel: "stylesheet" }).appendTo("head");
+
+loadScriptSync(live2d_path + 'live2d.min.js');
+loadScriptSync(live2d_path + 'waifu-tips.js');
 
 // //加载live2d.min.js
 // $.ajax({
@@ -46,3 +50,11 @@ console.log(`
                   ﾄ-,/  |___./
                   'ｰ'    !_,.:
 `);
+
+function loadScriptSync(src){
+  let script = document.createElement('script');
+  script.src = src;
+  script.type = "text/javascript";
+  script.async = false;
+  document.getElementsByTagName('head')[0].appendChild(script);
+}
