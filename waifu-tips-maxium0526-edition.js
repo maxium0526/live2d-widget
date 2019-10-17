@@ -25,7 +25,6 @@ function loadWidget(waifuPath, apiPath, config) {
 			<canvas id="live2d" width="300" height="300"></canvas>
 			<div id="waifu-tool"></div>`
 			);
-	console.log(config)
 	if(config && config.tools){
 
 		if(config.tools.useComment && config.tools.useComment == true) $("#waifu-tool").append(`<span class="fa fa-lg fa-comment"></span>`);
