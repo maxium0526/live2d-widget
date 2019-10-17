@@ -220,7 +220,7 @@ function loadWidget(waifuPath, apiPath, config) {
 
 		//temporary code, use for loading localstorage
 		if(config.loadPioFromLocal != undefined && config.loadPioFromLocal == true){
-			loadlive2d("live2d", waifuPath + "model/Pio/index.json", console.log('Loaded Pio from local storage successfully.'));
+			loadlive2d("live2d", waifuPath.split('/').slice(0, -1).join('/') + '/' + "model/Pio/index.json", console.log('Loaded Pio from local storage successfully.'));
 			return;
 		}
 
