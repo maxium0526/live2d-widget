@@ -37,6 +37,9 @@
 	}, {
 		"selector": ".navbar-link[href='/blog/links.html']",
 		"text": ["這是我的朋友們哦ヾ(◍°∇°◍)ﾉﾞ", "要去大佬們的家看看嗎？", "要去拜訪一下我的朋友們嗎？"]
+	}, {
+		"selector": ".navbar-link .dropdown-toggle",
+		"text": ["來分享一波喵！"]
 	},
 
 	   {
@@ -48,10 +51,14 @@
 	}, {
 		"selector": ".menu-item-categories",
 		"text": ["文章都分類好啦～", "點擊來查看文章分類哦。", "快看看這裏都有什麽呢！"]
-	}, {
-		"selector": ".site-author",
+	},
+	  
+	   {
+		"selector": ".author-thumb",
 		"text": ["我家主人好看嗎？", "這是我家主人(*´∇｀*)"]
-	}, {
+	},
+
+	   {
 		"selector": ".site-state",
 		"text": ["這是文章的統計信息～", "要不要點進去看看？"]
 	}, {
@@ -68,7 +75,7 @@
 		"selector": ".links-of-author",
 		"text": ["這裏是主人的常駐地址哦。", "這裏有主人的聯系方式！"]
 	},
-	
+
 	   {
 		"selector": "img[alr='QRCode']",
 		"text": ["手機掃一下就能繼續看，很方便呢～", "掃一掃，打開新世界的大門！"]
@@ -95,10 +102,14 @@
 	}, {
 		"selector": ".post-title-link",
 		"text": ["要看看 <span style=\"color:#0099cc;\">{text}</span> 這篇文章嗎？"]
-	}, {
-		"selector": "a[rel='contents']",
+	},
+
+	   {
+		"selector": "a.card-title",
 		"text": ["點擊來閱讀全文哦。"]
-	}, {
+	},
+
+	   {
 		"selector": "a[itemprop='discussionUrl']",
 		"text": ["要去看看評論嗎？"]
 	}, {
@@ -116,28 +127,9 @@
 	}, {
 		"selector": "#bitcoin",
 		"text": ["這是我的比特幣賬號！"]
-	}, {
-		"selector": "#needsharebutton-postbottom .btn",
-		"text": ["好東西要讓更多人知道才行哦。", "覺得文章有幫助的話，可以分享給更多需要的朋友呢。"]
-	}, {
-		"selector": ".need-share-button_weibo",
-		"text": ["微博？來分享一波喵！"]
-	}, {
-		"selector": ".need-share-button_wechat",
-		"text": ["分享到微信吧！"]
-	}, {
-		"selector": ".need-share-button_douban",
-		"text": ["分享到豆瓣好像也不錯！"]
-	}, {
-		"selector": ".need-share-button_qqzone",
-		"text": ["QQ空間，一鍵轉發，耶～"]
-	}, {
-		"selector": ".need-share-button_twitter",
-		"text": ["Twitter？我喜歡小鳥！"]
-	}, {
-		"selector": ".need-share-button_facebook",
-		"text": ["emmm…FB…I!"]
-	}, {
+	},
+
+	   {
 		"selector": ".post-nav-next",
 		"text": ["來看看下一篇文章吧。", "點它可以看下一篇文章哦！", "要翻到下一篇文章嗎？"]
 	}, {
