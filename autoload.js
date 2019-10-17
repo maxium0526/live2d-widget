@@ -1,31 +1,29 @@
 //注意：live2d_path参数应使用绝对路径
-//const live2d_path = "https://maxium0526.github.io/live2d-widget/";
 const live2d_path = document.currentScript.src.split('/').slice(0, -1).join('/') + '/';//get this file's directory
 // const live2d_path = "/live2d-widget/";
 
 //加载waifu.css
 $("<link>").attr({ href: live2d_path + "waifu.css", rel: "stylesheet" }).appendTo("head");
 
+//加載live2d
 loadScriptSync(live2d_path + 'live2d.min.js');
-loadScriptSync(live2d_path + 'waifu-tips.js');
 
-// //加载live2d.min.js
-// $.ajax({
-// 	url: live2d_path + "live2d.min.js",
-// 	dataType: "script",
-// 	cache: true
-// });
-
-// //加载waifu-tips.js
-// $.ajax({
-// 	url: live2d_path + "waifu-tips.js",
-// 	dataType: "script",
-// 	cache: true
-// });
+//加載waifu-tips
+loadScriptSync(live2d_path + 'waifu-tips-maxium0526-edition.js');
 
 //初始化看板娘，会自动加载指定目录下的waifu-tips.json
 $(window).on("load", function() {
-	initWidget(live2d_path + "waifu-tips.json", "https://live2d.fghrsh.net/api");
+	initWidget(live2d_path + "waifu-tips.json", "https://live2d.fghrsh.net/api",{
+    tools:{
+      useComment: false,
+      usePaperPlane: false,
+      useChangeModel: false,
+      useCahngeTexture: true,
+      useCamera: false,
+      useInfo: true,
+      useHide: true,
+    }
+  });
 });
 //initWidget第一个参数为waifu-tips.json的路径
 //第二个参数为api地址（无需修改）
@@ -49,6 +47,8 @@ console.log(`
               ﾚ'ヽL__|___i,___,ンﾚ|ノ
                   ﾄ-,/  |___./
                   'ｰ'    !_,.:
+    maxium0526@github.com edition
+    (original - stevenjoezhang/live2d-widget)
 `);
 
 function loadScriptSync(src){
