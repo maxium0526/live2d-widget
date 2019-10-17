@@ -38,7 +38,7 @@
 		"selector": ".navbar-link[href='/blog/links.html']",
 		"text": ["這是我的朋友們哦ヾ(◍°∇°◍)ﾉﾞ", "要去大佬們的家看看嗎？", "要去拜訪一下我的朋友們嗎？"]
 	}, {
-		"selector": ".navbar-link .dropdown-toggle",
+		"selector": ".navbar-link.dropdown-toggle, .post-header-info-right .dropdown-toggle",
 		"text": ["來分享一波喵！"]
 	},
 
