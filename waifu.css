@@ -45,6 +45,7 @@
 	overflow: hidden;
 	position: absolute;
 	animation: shake 50s ease-in-out 5s infinite;
+	color: #113f67;
 }
 #waifu #live2d {
 	position: relative;
