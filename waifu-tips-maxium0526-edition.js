@@ -67,7 +67,7 @@ function loadWidget(waifuPath, apiPath, config) {
 		$("#waifu-tool .fa-user-circle").click(loadOtherModel);
 		$("#waifu-tool .fa-street-view").click(loadRandModel);
 		$("#waifu-tool .fa-camera-retro").click(() => {
-			showMessage("照好了嘛，是不是很可爱呢？", 6000, 9);
+			showMessage("照好了嘛，是不是很可愛呢？", 6000, 9);
 			Live2D.captureName = "photo.png";
 			Live2D.captureFrame = true;
 		});
@@ -76,7 +76,7 @@ function loadWidget(waifuPath, apiPath, config) {
 		});
 		$("#waifu-tool .fa-times").click(() => {
 			localStorage.setItem("waifu-display", new Date().getTime());
-			showMessage("愿你有一天能与重要的人重逢。", 2000, 11);
+			showMessage("願你有一天能與重要的人重逢。", 2000, 11);
 			$("#waifu").animate({ bottom: -500 }, 3000, () => {
 				$("#waifu").hide();
 				$("#waifu-toggle").show().animate({ "margin-left": -50 }, 1000);
@@ -85,14 +85,14 @@ function loadWidget(waifuPath, apiPath, config) {
 		var re = /x/;
 		console.log(re);
 		re.toString = () => {
-			showMessage("哈哈，你打开了控制台，是想要看看我的小秘密吗？", 6000, 9);
+			showMessage("哈哈，你打開了控制台，是想要看看我的小秘密嗎？", 6000, 9);
 			return "";
 		};
 		$(document).on("copy", () => {
-			showMessage("你都复制了些什么呀，转载要记得加上出处哦！", 6000, 9);
+			showMessage("你都複製了些甚麼呀，轉載要記得加上出處哦！", 6000, 9);
 		});
 		$(document).on("visibilitychange", () => {
-			if (!document.hidden) showMessage("哇，你终于回来了～", 6000, 9);
+			if (!document.hidden) showMessage("哇，你終於回來了～", 6000, 9);
 		});
 	}
 	registerEventListener();
@@ -101,25 +101,25 @@ function loadWidget(waifuPath, apiPath, config) {
 		var SiteIndexUrl = location.port ? `${location.protocol}//${location.hostname}:${location.port}/` : `${location.protocol}//${location.hostname}/`, text; //自动获取主页
 		if (location.href == SiteIndexUrl) { //如果是主页
 			var now = new Date().getHours();
-			if (now > 5 && now <= 7) text = "早上好！一日之计在于晨，美好的一天就要开始了。";
-			else if (now > 7 && now <= 11) text = "上午好！工作顺利嘛，不要久坐，多起来走动走动哦！";
-			else if (now > 11 && now <= 14) text = "中午了，工作了一个上午，现在是午餐时间！";
-			else if (now > 14 && now <= 17) text = "午后很容易犯困呢，今天的运动目标完成了吗？";
-			else if (now > 17 && now <= 19) text = "傍晚了！窗外夕阳的景色很美丽呢，最美不过夕阳红～";
-			else if (now > 19 && now <= 21) text = "晚上好，今天过得怎么样？";
-			else if (now > 21 && now <= 23) text = ["已经这么晚了呀，早点休息吧，晚安～", "深夜时要爱护眼睛呀！"];
-			else text = "你是夜猫子呀？这么晚还不睡觉，明天起的来嘛？";
+			if (now > 5 && now <= 7) text = "早安！一日之計在於晨，美好的一天就要開始了。";
+			else if (now > 7 && now <= 11) text = "早安！工作順利嘛，不要久坐，多起來走動哦！";
+			else if (now > 11 && now <= 14) text = "中午了，工作了一個上午，現在是午餐時間！";
+			else if (now > 14 && now <= 17) text = "午後很容易犯困呢，今天的運動目標完成了嗎？";
+			else if (now > 17 && now <= 19) text = "傍晚了！窗外夕陽的景色很美麗呢，最美不過夕陽紅～";
+			else if (now > 19 && now <= 21) text = "晚上好，今天過得怎麼樣？";
+			else if (now > 21 && now <= 23) text = ["已經這麼晚了呀，早點休息吧，晚安～", "深夜時要愛護眼睛呀！"];
+			else text = "你是夜貓子呀？這麼晚還不睡覺，明天起的來嘛？";
 		} else if (document.referrer !== "") {
 			var referrer = document.createElement("a");
 			referrer.href = document.referrer;
 			var domain = referrer.hostname.split(".")[1];
-			if (location.hostname == referrer.hostname) text = `欢迎阅读<span style="color:#0099cc;">『${document.title.split(" - ")[0]}』</span>`;
-			else if (domain == "baidu") text = `Hello！来自 百度搜索 的朋友<br>你是搜索 <span style="color:#0099cc;">${referrer.search.split("&wd=")[1].split("&")[0]}</span> 找到的我吗？`;
-			else if (domain == "so") text = `Hello！来自 360搜索 的朋友<br>你是搜索 <span style="color:#0099cc;">${referrer.search.split("&q=")[1].split("&")[0]}</span> 找到的我吗？`;
-			else if (domain == "google") text = `Hello！来自 谷歌搜索 的朋友<br>欢迎阅读<span style="color:#0099cc;">『${document.title.split(" - ")[0]}』</span>`;
-			else text = `Hello！来自 <span style="color:#0099cc;">${referrer.hostname}</span> 的朋友`;
+			if (location.hostname == referrer.hostname) text = `歡迎閱讀<span style="color:#0099cc;">『${document.title.split(" - ")[0]}』</span>`;
+			else if (domain == "baidu") text = `Hello！來自 百度 的朋友<br>你是搜尋 <span style="color:#0099cc;">${referrer.search.split("&wd=")[1].split("&")[0]}</span> 找到的我嗎？`;
+			else if (domain == "so") text = `Hello！來自 360 的朋友<br>你是搜尋 <span style="color:#0099cc;">${referrer.search.split("&q=")[1].split("&")[0]}</span> 找到的我嗎？`;
+			else if (domain == "google") text = `Hello！来自 Google搜尋 的朋友<br>歡迎閱讀<span style="color:#0099cc;">『${document.title.split(" - ")[0]}』</span>`;
+			else text = `Hello！來自 <span style="color:#0099cc;">${referrer.hostname}</span> 的朋友`;
 		} else {
-			text = `欢迎阅读<span style="color:#0099cc;">『${document.title.split(" - ")[0]}』</span>`;
+			text = `歡迎閱讀<span style="color:#0099cc;">『${document.title.split(" - ")[0]}』</span>`;
 		}
 		showMessage(text, 7000, 8);
 	}
@@ -128,8 +128,8 @@ function loadWidget(waifuPath, apiPath, config) {
 	var userAction = false,
 		hitokotoTimer = null,
 		messageTimer = null,
-		messageArray = ["好久不见，日子过得好快呢……", "大坏蛋！你都多久没碰人家了呀，嘤嘤嘤～", "嗨～快来逗我玩吧！", "拿小拳拳锤你胸口！"];
-	if ($(".fa-share-alt").is(":hidden")) messageArray.push("记得把小家加入Adblock白名单哦！");
+		messageArray = ["好久不見，日子過得好快呢……", "大壞蛋！你都多久沒碰人家了呀，嚶嚶嚶～", "Hi～快来逗我玩吧！", "拿小拳拳錘你胸口！"];
+	if ($(".fa-share-alt").is(":hidden")) messageArray.push("記得把小家加入Adblock白名單哦！");
 	$(document).mousemove(() => {
 		userAction = true;
 	}).keydown(() => {
@@ -149,7 +149,7 @@ function loadWidget(waifuPath, apiPath, config) {
 		//增加 hitokoto.cn 的 API
 		if (Math.random() < 0.6 && messageArray.length > 0) showMessage(messageArray[Math.floor(Math.random() * messageArray.length)], 6000, 9);
 		else $.getJSON("https://v1.hitokoto.cn", function(result) {
-				var text = `这句一言来自 <span style="color:#0099cc;">『${result.from}』</span>，是 <span style="color:#0099cc;">${result.creator}</span> 在 hitokoto.cn 投稿的。`;
+				var text = `這句一言來自 <span style="color:#0099cc;">『${result.from}』</span>，是 <span style="color:#0099cc;">${result.creator}</span> 在 hitokoto.cn 投稿的。`;
 			showMessage(result.hitokoto, 6000, 9);
 			setTimeout(() => {
 				showMessage(text, 4000, 9);
@@ -229,7 +229,7 @@ function loadWidget(waifuPath, apiPath, config) {
 			url: `${apiPath}/rand_textures/?id=${modelId}-${modelTexturesId}`,
 			dataType: "json",
 			success: function(result) {
-				if (result.textures["id"] == 1 && (modelTexturesId == 1 || modelTexturesId == 0)) showMessage("我还没有其他衣服呢！", 4000, 10);
+				if (result.textures["id"] == 1 && (modelTexturesId == 1 || modelTexturesId == 0)) showMessage("我還沒有其他衣服呢！", 4000, 10);
 				else showMessage("我的新衣服好看嘛？", 4000, 10);
 				loadModel(modelId, result.textures["id"]);
 			}
