@@ -43,8 +43,8 @@
 	},
 
 	   {
-		"selector": ".menu-item-about",
-		"text": ["你想知道我家主人是誰嗎？", "這裏有一些關於我家主人的秘密哦，要不要看看呢？", "發現主人出沒地點！"]
+		"selector": "a[href='/about_me/index.html']",
+		"text": ["你想知道我家主人是誰嗎？", "這裏有一些關於我家主人的秘密哦，要不要看看呢？", "發現主人出沒地點！", "這裏是主人的常駐地址哦。", "這裏有主人的聯系方式！"]
 	}, {
 		"selector": ".menu-item-tags",
 		"text": ["點擊就可以看文章的標簽啦！", "點擊來查看所有標簽哦。", "快看看這裏都有什麽呢！"]
@@ -67,13 +67,8 @@
 	},
 
 	   {
-		"selector": ".post-license",
+		"selector": ".post-license>*",
 		"text": ["要記得規範轉載哦。", "所有文章均采用 CC BY-NC-SA 4.0 許可協議～", "轉載前要先註意下文章的版權協議呢。"]
-	},
-
-	   {
-		"selector": ".links-of-author",
-		"text": ["這裏是主人的常駐地址哦。", "這裏有主人的聯系方式！"]
 	},
 
 	   {
@@ -86,7 +81,7 @@
 		"text": ["點擊圖片可以放大呢！"]
 	}, {
 		"selector": ".highlight-wrap, .gist",
-		"text": ["代碼可以直接點擊覆制喲。", "GitHub！我是新手！", "PHP 是最好的語言！"]
+		"text": ["代碼可以直接點擊覆制喲。", "GitHub！我是新手！"]
 	}, {
 		"selector": ".container a[href^='http'], .nav-link .nav-text",
 		"text": ["要去看看 <span style=\"color:#0099cc;\">{text}</span> 麽？", "去 <span style=\"color:#0099cc;\">{text}</span> 逛逛吧。", "到 <span style=\"color:#0099cc;\">{text}</span> 看看吧。"]
@@ -168,7 +163,13 @@
 	}, {
 		"selector": ".vcontent",
 		"text": ["哇，快看看這個精彩評論！", "如果有疑問，請盡快留言哦～"]
-	}],
+	}, {
+		"selector": "a[href='works/index.html']",
+		"text": ["看看我家主人做過什麼～", "這裡有一些奇怪的作品。", "PHP 是最好的語言！"]
+	}, {
+		"selector": "a[href='blog']",
+		"text": ["好Blog Blog，不看嗎？", "都指著那裡了，按下去吧～"]
+	},],
 	"click": [{
 		"selector": "#waifu #live2d",
 		"text": ["是…是不小心碰到了吧…", "蘿莉控是什麽呀？", "你看到我的小熊了嗎？", "再摸的話我可要報警了！⌇●﹏●⌇", "110嗎，這裏有個變態一直在摸我(ó﹏ò｡)", "不要摸我了，我會告訴老婆來打你的！", "幹嘛動我呀！小心我咬你！", "別摸我，有什麽好摸的！"]
